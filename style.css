@@ -1,0 +1,99 @@
+header {
+    color: white;
+    font-size: 50pt;
+
+    width: auto;
+    height: 300pt;
+
+    align-content: center;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+header::last-word {
+    font-weight: bold;
+}
+
+div {
+    height: 30pt;
+}
+
+#one {
+    background-color: blue;
+}
+
+#two {
+    background-color: orange;
+}
+
+#three {
+    background-color: turquoise;
+}
+
+h1 {
+    margin: 5pt 0pt 7pt 0pt;
+    font-size: 45pt;
+    font-weight: 250;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15pt;
+}
+
+@media (min-width: 576px) {
+    header {
+        background-color: lightblue;
+    } 
+    
+    article {
+        display: flex;
+        flex-direction: column;
+        
+        padding: 30pt 0pt; /* for this element, not its child elements */
+        
+        /* For child elements */
+        align-items: center;
+        justify-content: center;
+        gap: 50pt; /* between each child element */
+
+        /* 
+           Note that we set the section (NOT article) width at 33%.
+           Otherwise, align-items & justify content would not align the child elements at the center of the viewport.
+        */
+    }
+
+    section {
+        width: 33%;
+    }
+}
+
+@media (min-width: 992px) {
+    header {
+        background-color: turquoise;
+    }
+
+    article {
+        background-color: black;
+        color: white;
+
+        display: flex;
+        flex-direction: row;
+        
+        /* For this element */
+        padding-top: 10pt;  /* for this element, not its child elements */
+        height: 300pt;
+
+        /* For child elements */
+        justify-content: center;
+        gap: 10%; /* between each child element */
+    }
+
+    section {
+        width: 20%;
+    }
+
+}
