@@ -44,7 +44,7 @@ p {
     font-size: 15pt;
 }
 
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
     header {
         background-color: #33a8dd;
     } 
@@ -71,7 +71,7 @@ p {
     }
 }
 
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
     header {
         background-color: #2bcec0;
     }
